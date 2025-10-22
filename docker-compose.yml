@@ -1,0 +1,74 @@
+# Docker Compose configuration
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:5.0
+    container_name: echelon-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+      MONGO_INITDB_DATABASE: echelon_ecommerce
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    networks:
+      - echelon-network
+
+  # Backend API
+  backend:
+    build: ./echelon-ecommerce-backend
+    container_name: echelon-backend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+      MONGODB_URI: mongodb://admin:password123@mongodb:27017/echelon_ecommerce?authSource=admin
+      JWT_SECRET: your-super-secret-jwt-key-change-in-production
+      JWT_EXPIRE: 7d
+      BCRYPT_ROUNDS: 12
+      FRONTEND_URL: http://localhost:3000
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongodb
+    volumes:
+      - ./echelon-ecommerce-backend/uploads:/app/uploads
+    networks:
+      - echelon-network
+
+  # Frontend Application
+  frontend:
+    build: ./echelon-ecommerce-frontendsrc
+    container_name: echelon-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - echelon-network
+
+  # Redis for caching (optional)
+  redis:
+    image: redis:7-alpine
+    container_name: echelon-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - echelon-network
+
+volumes:
+  mongodb_data:
+  redis_data:
+
+networks:
+  echelon-network:
+    driver: bridge

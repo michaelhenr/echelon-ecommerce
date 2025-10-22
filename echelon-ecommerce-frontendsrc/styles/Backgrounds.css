@@ -1,0 +1,245 @@
+/* Background Styles for Echelon Ecommerce */
+
+/* Login Page Background */
+.login-background {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(29, 78, 216, 0.9) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="flamingo-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse"><circle cx="100" cy="100" r="80" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/><path d="M50,150 Q100,100 150,150" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/></pattern></defs><rect width="100%" height="100%" fill="url(%23flamingo-pattern)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.login-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23f59e0b;stop-opacity:0.1" /><stop offset="100%" style="stop-color:%23ef4444;stop-opacity:0.1" /></linearGradient></defs><path d="M200,50 Q250,100 200,150 Q150,100 200,50 Z" fill="url(%23grad1)"/><circle cx="200" cy="200" r="100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></svg>') no-repeat center;
+  background-size: 300px 300px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Register Page Background */
+.register-background {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.9) 0%, rgba(5, 150, 105, 0.9) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="elegant-pattern" x="0" y="0" width="300" height="300" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="300" height="300" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><circle cx="150" cy="150" r="120" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/><path d="M75,225 Q150,150 225,225" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23elegant-pattern)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.register-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23f59e0b;stop-opacity:0.15" /><stop offset="50%" style="stop-color:%23ef4444;stop-opacity:0.1" /><stop offset="100%" style="stop-color:%2310b981;stop-opacity:0.15" /></linearGradient></defs><path d="M250,50 Q300,150 250,250 Q200,150 250,50 Z" fill="url(%23grad2)"/><circle cx="250" cy="250" r="150" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/><path d="M100,400 Q250,300 400,400" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/></svg>') no-repeat center;
+  background-size: 400px 400px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Product Pages Background */
+.products-background {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(239, 68, 68, 0.05) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="product-pattern" x="0" y="0" width="150" height="150" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="150" height="150" fill="none" stroke="rgba(37,99,235,0.03)" stroke-width="1"/><circle cx="75" cy="75" r="60" fill="none" stroke="rgba(16,185,129,0.04)" stroke-width="1"/><path d="M30,120 Q75,75 120,120" fill="none" stroke="rgba(245,158,11,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23product-pattern)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.products-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><defs><linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%232563eb;stop-opacity:0.08" /><stop offset="50%" style="stop-color:%23f59e0b;stop-opacity:0.06" /><stop offset="100%" style="stop-color:%2310b981;stop-opacity:0.08" /></linearGradient></defs><path d="M300,50 Q400,200 300,350 Q200,200 300,50 Z" fill="url(%23grad3)"/><circle cx="300" cy="300" r="200" fill="none" stroke="rgba(37,99,235,0.05)" stroke-width="2"/><path d="M100,500 Q300,400 500,500" fill="none" stroke="rgba(16,185,129,0.04)" stroke-width="1"/></svg>') no-repeat center;
+  background-size: 500px 500px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Home Page Background */
+.home-background {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="home-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="200" height="200" fill="none" stroke="rgba(37,99,235,0.02)" stroke-width="1"/><circle cx="100" cy="100" r="80" fill="none" stroke="rgba(16,185,129,0.03)" stroke-width="1"/><path d="M40,160 Q100,100 160,160" fill="none" stroke="rgba(245,158,11,0.02)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23home-pattern)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.home-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><defs><linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%232563eb;stop-opacity:0.06" /><stop offset="25%" style="stop-color:%23f59e0b;stop-opacity:0.04" /><stop offset="50%" style="stop-color:%23ef4444;stop-opacity:0.05" /><stop offset="75%" style="stop-color:%2310b981;stop-opacity:0.04" /><stop offset="100%" style="stop-color:%232563eb;stop-opacity:0.06" /></linearGradient></defs><path d="M400,50 Q500,200 400,350 Q300,200 400,50 Z" fill="url(%23grad4)"/><circle cx="400" cy="400" r="250" fill="none" stroke="rgba(37,99,235,0.04)" stroke-width="2"/><path d="M150,650 Q400,550 650,650" fill="none" stroke="rgba(16,185,129,0.03)" stroke-width="1"/></svg>') no-repeat center;
+  background-size: 600px 600px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Profile Page Background */
+.profile-background {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="profile-pattern" x="0" y="0" width="180" height="180" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="180" height="180" fill="none" stroke="rgba(139,92,246,0.03)" stroke-width="1"/><circle cx="90" cy="90" r="70" fill="none" stroke="rgba(59,130,246,0.04)" stroke-width="1"/><path d="M30,150 Q90,90 150,150" fill="none" stroke="rgba(245,158,11,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23profile-pattern)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.profile-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700"><defs><linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%238b5cf6;stop-opacity:0.08" /><stop offset="50%" style="stop-color:%233b82f6;stop-opacity:0.06" /><stop offset="100%" style="stop-color:%23f59e0b;stop-opacity:0.08" /></linearGradient></defs><path d="M350,50 Q450,200 350,350 Q250,200 350,50 Z" fill="url(%23grad5)"/><circle cx="350" cy="350" r="200" fill="none" stroke="rgba(139,92,246,0.05)" stroke-width="2"/><path d="M150,550 Q350,450 550,550" fill="none" stroke="rgba(59,130,246,0.04)" stroke-width="1"/></svg>') no-repeat center;
+  background-size: 550px 550px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Admin Dashboard Background */
+.admin-background {
+  background: linear-gradient(135deg, rgba(220, 38, 127, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="admin-pattern" x="0" y="0" width="160" height="160" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="160" height="160" fill="none" stroke="rgba(220,38,127,0.03)" stroke-width="1"/><circle cx="80" cy="80" r="60" fill="none" stroke="rgba(147,51,234,0.04)" stroke-width="1"/><path d="M20,140 Q80,80 140,140" fill="none" stroke="rgba(245,158,11,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23admin-pattern)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.admin-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><defs><linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23dc267f;stop-opacity:0.08" /><stop offset="50%" style="stop-color:%239333ea;stop-opacity:0.06" /><stop offset="100%" style="stop-color:%23f59e0b;stop-opacity:0.08" /></linearGradient></defs><path d="M300,50 Q400,200 300,350 Q200,200 300,50 Z" fill="url(%23grad6)"/><circle cx="300" cy="300" r="200" fill="none" stroke="rgba(220,38,127,0.05)" stroke-width="2"/><path d="M100,500 Q300,400 500,500" fill="none" stroke="rgba(147,51,234,0.04)" stroke-width="1"/></svg>') no-repeat center;
+  background-size: 500px 500px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Brand Owner Dashboard Background */
+.brand-background {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="brand-pattern" x="0" y="0" width="140" height="140" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="140" height="140" fill="none" stroke="rgba(34,197,94,0.03)" stroke-width="1"/><circle cx="70" cy="70" r="50" fill="none" stroke="rgba(16,185,129,0.04)" stroke-width="1"/><path d="M20,120 Q70,70 120,120" fill="none" stroke="rgba(245,158,11,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23brand-pattern)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.brand-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2322c55e;stop-opacity:0.08" /><stop offset="50%" style="stop-color:%2310b981;stop-opacity:0.06" /><stop offset="100%" style="stop-color:%23f59e0b;stop-opacity:0.08" /></linearGradient></defs><path d="M250,50 Q350,200 250,350 Q150,200 250,50 Z" fill="url(%23grad7)"/><circle cx="250" cy="250" r="150" fill="none" stroke="rgba(34,197,94,0.05)" stroke-width="2"/><path d="M100,400 Q250,300 400,400" fill="none" stroke="rgba(16,185,129,0.04)" stroke-width="1"/></svg>') no-repeat center;
+  background-size: 400px 400px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Advertiser Dashboard Background */
+.advertiser-background {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(217, 119, 6, 0.05) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="advertiser-pattern" x="0" y="0" width="170" height="170" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="170" height="170" fill="none" stroke="rgba(245,158,11,0.03)" stroke-width="1"/><circle cx="85" cy="85" r="65" fill="none" stroke="rgba(217,119,6,0.04)" stroke-width="1"/><path d="M25,145 Q85,85 145,145" fill="none" stroke="rgba(37,99,235,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23advertiser-pattern)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.advertiser-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 550"><defs><linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23f59e0b;stop-opacity:0.08" /><stop offset="50%" style="stop-color:%23d97706;stop-opacity:0.06" /><stop offset="100%" style="stop-color:%232563eb;stop-opacity:0.08" /></linearGradient></defs><path d="M275,50 Q375,200 275,350 Q175,200 275,50 Z" fill="url(%23grad8)"/><circle cx="275" cy="275" r="175" fill="none" stroke="rgba(245,158,11,0.05)" stroke-width="2"/><path d="M100,450 Q275,350 450,450" fill="none" stroke="rgba(217,119,6,0.04)" stroke-width="1"/></svg>') no-repeat center;
+  background-size: 450px 450px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Ensure content is above background */
+.auth-container,
+.profile-page,
+.products-page,
+.home-page {
+  position: relative;
+  z-index: 1;
+}
+
+/* Enhanced card styles for better visibility over backgrounds */
+.auth-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.profile-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.products-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: var(--spacing-6);
+  margin: var(--spacing-4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-background,
+  .register-background,
+  .products-background,
+  .home-background,
+  .profile-background,
+  .admin-background,
+  .brand-background,
+  .advertiser-background {
+    background-attachment: scroll;
+  }
+  
+  .products-container {
+    margin: var(--spacing-2);
+    padding: var(--spacing-4);
+  }
+}
