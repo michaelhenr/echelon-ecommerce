@@ -1,0 +1,421 @@
+/* Thank You Page Styles */
+.thank-you-page {
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.thank-you-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.thank-you-content {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 4rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.thank-you-icon {
+  font-size: 4rem;
+  color: #E74C3C;
+  margin-bottom: 2rem;
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.thank-you-content h1 {
+  font-size: 3rem;
+  color: #2C3E50;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}
+
+.thank-you-message {
+  font-size: 1.2rem;
+  color: #5D6D7E;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discount-offer {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.1), rgba(210, 105, 30, 0.1));
+  padding: 3rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  border: 2px solid rgba(139, 69, 19, 0.2);
+}
+
+.discount-icon {
+  font-size: 3rem;
+  color: #8B4513;
+  margin-bottom: 1.5rem;
+}
+
+.discount-offer h2 {
+  font-size: 2rem;
+  color: #2C3E50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.discount-offer p {
+  font-size: 1.1rem;
+  color: #5D6D7E;
+  margin-bottom: 2rem;
+}
+
+.email-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #2C3E50;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.email-input-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.email-input {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #8B4513;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: #8B4513;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #A0522D;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #8B4513;
+  border: 2px solid #8B4513;
+}
+
+.btn-outline:hover {
+  background: #8B4513;
+  color: white;
+}
+
+.btn-lg {
+  padding: 1.2rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: rgba(40, 167, 69, 0.1);
+  border-radius: 8px;
+  border: 2px solid rgba(40, 167, 69, 0.3);
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: #28A745;
+}
+
+.success-message p {
+  font-size: 1.1rem;
+  color: #155724;
+  font-weight: 600;
+  margin: 0;
+}
+
+.social-impact {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(52, 152, 219, 0.05);
+  border-radius: 15px;
+  border-left: 4px solid #3498DB;
+}
+
+.social-impact h3 {
+  font-size: 1.8rem;
+  color: #2C3E50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.social-impact p {
+  font-size: 1.1rem;
+  color: #5D6D7E;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #8B4513;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #7F8C8D;
+  font-weight: 500;
+}
+
+.next-steps {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.next-steps h3 {
+  font-size: 1.8rem;
+  color: #2C3E50;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: #8B4513;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  font-size: 1.2rem;
+  color: #2C3E50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.step-content p {
+  color: #7F8C8D;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-info {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(155, 89, 182, 0.05);
+  border-radius: 15px;
+  border-left: 4px solid #9B59B6;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  color: #2C3E50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #5D6D7E;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.contact-link {
+  color: #8B4513;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #A0522D;
+  text-decoration: underline;
+}
+
+.thank-you-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .thank-you-container {
+    padding: 0 1rem;
+  }
+  
+  .thank-you-content {
+    padding: 3rem 2rem;
+  }
+  
+  .thank-you-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .discount-offer {
+    padding: 2rem;
+  }
+  
+  .email-input-group {
+    flex-direction: column;
+  }
+  
+  .email-input {
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .impact-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .thank-you-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .thank-you-actions .btn {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .thank-you-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .thank-you-content h1 {
+    font-size: 2rem;
+  }
+  
+  .thank-you-message {
+    font-size: 1.1rem;
+  }
+  
+  .discount-offer {
+    padding: 1.5rem;
+  }
+  
+  .discount-offer h2 {
+    font-size: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .step {
+    padding: 1rem;
+  }
+  
+  .step-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}

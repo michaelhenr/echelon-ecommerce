@@ -13,9 +13,17 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProtectedRoute from './components/ProtectedRoute';
 import LoadingSpinner from './components/LoadingSpinner';
+import ChatBot from './components/ChatBot';
 
 // Pages
+import LandingPage from './pages/LandingPage';
 import Home from './pages/Home';
+import About from './pages/About';
+import BrandSubmission from './pages/BrandSubmission';
+import ProductSubmission from './pages/ProductSubmission';
+import AdvertiserPage from './pages/AdvertiserPage';
+import AdminPanel from './pages/AdminPanel';
+import ThankYou from './pages/ThankYou';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import ProductList from './pages/ProductList';
@@ -43,6 +51,12 @@ import AdApproval from './pages/admin/AdApproval';
 import './styles/global.css';
 import './styles/backgrounds.css';
 import './styles/dashboard.css';
+import './styles/landing.css';
+import './styles/about.css';
+import './styles/submission.css';
+import './styles/admin.css';
+import './styles/chatbot.css';
+import './styles/thankyou.css';
 
 // Create a client
 const queryClient = new QueryClient({
@@ -67,7 +81,14 @@ function App() {
                 <main className="main-content">
                   <Routes>
                     {/* Public Routes */}
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/client" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/brand" element={<BrandSubmission />} />
+                    <Route path="/product-submission" element={<ProductSubmission />} />
+                    <Route path="/advertiser" element={<AdvertiserPage />} />
+                    <Route path="/admin" element={<AdminPanel />} />
+                    <Route path="/thank-you" element={<ThankYou />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/products" element={<ProductList />} />
@@ -146,6 +167,7 @@ function App() {
                   </Routes>
                 </main>
                 <Footer />
+                <ChatBot />
                 <Toaster 
                   position="top-right"
                   toastOptions={{

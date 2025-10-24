@@ -8,17 +8,18 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Echelon Ecommerce - Your Premier Shopping Destination</title>
-        <meta name="description" content="Discover amazing products from trusted brands on Echelon Ecommerce platform" />
+        <title>Echelon Society - A Higher Standard</title>
+        <meta name="description" content="Discover premium products from Echelon Society and curated brands. A Higher Standard in fashion and quality." />
       </Helmet>
 
-      <div className="home-page home-background">
+      <LuxuryStudyBackground>
+        <div className="home-page home-background">
         {/* Hero Section */}
         <section className="hero-section">
           <div className="hero-content">
             <div className="hero-text">
-              <h1>Welcome to Echelon Ecommerce</h1>
-              <p>Your premier destination for quality products and seamless shopping experience</p>
+              <h1>Welcome to Echelon Society</h1>
+              <p>A Higher Standard in Fashion and Quality</p>
               <div className="hero-actions">
                 <Link to="/products" className="btn btn-primary btn-lg">
                   <FaShoppingBag />
@@ -39,8 +40,8 @@ const Home = () => {
         <section className="features-section">
           <div className="container">
             <div className="section-header">
-              <h2>Why Choose Echelon?</h2>
-              <p>Experience the future of e-commerce with our innovative platform</p>
+              <h2>Why Choose Echelon Society?</h2>
+              <p>Experience premium quality and social responsibility with every purchase</p>
             </div>
             
             <div className="features-grid">
@@ -48,32 +49,32 @@ const Home = () => {
                 <div className="feature-icon">
                   <FaShoppingBag />
                 </div>
-                <h3>Wide Product Selection</h3>
-                <p>Browse thousands of products from trusted brands across various categories</p>
+                <h3>Premium Products</h3>
+                <p>Curated selection of high-quality products from Echelon Society and trusted partner brands</p>
               </div>
               
               <div className="feature-card">
                 <div className="feature-icon">
                   <FaChartLine />
                 </div>
-                <h3>Advanced Analytics</h3>
-                <p>Track your sales and performance with comprehensive analytics dashboard</p>
+                <h3>Social Impact</h3>
+                <p>50% of our profits go directly to helping the less fortunate in our community</p>
               </div>
               
               <div className="feature-card">
                 <div className="feature-icon">
                   <FaUsers />
                 </div>
-                <h3>Multi-Role Platform</h3>
-                <p>Support for clients, brand owners, advertisers, and administrators</p>
+                <h3>Established 2017</h3>
+                <p>From sportswear to premium fashion, we've been serving our community for years</p>
               </div>
               
               <div className="feature-card">
                 <div className="feature-icon">
                   <FaAd />
                 </div>
-                <h3>Advertising Solutions</h3>
-                <p>Promote your products with our advanced advertising management system</p>
+                <h3>A Higher Standard</h3>
+                <p>We believe in quality, craftsmanship, and making a positive difference in the world</p>
               </div>
             </div>
           </div>

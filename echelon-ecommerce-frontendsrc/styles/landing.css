@@ -1,0 +1,337 @@
+/* Landing Page Styles */
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-header {
+  padding: 2rem 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-container:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  font-size: 3rem;
+  color: #8B4513;
+  margin-bottom: 0.5rem;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2C3E50;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #7F8C8D;
+  font-style: italic;
+  margin: 0;
+  font-weight: 300;
+}
+
+.landing-main {
+  flex: 1;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.landing-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.landing-hero h2 {
+  font-size: 2.5rem;
+  color: #2C3E50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.landing-hero p {
+  font-size: 1.2rem;
+  color: #7F8C8D;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.option-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.option-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #8B4513, #D2691E);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: #8B4513;
+}
+
+.option-card:hover::before {
+  transform: scaleX(1);
+}
+
+.option-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.client-option .option-icon {
+  color: #3498DB;
+}
+
+.advertiser-option .option-icon {
+  color: #E74C3C;
+}
+
+.brand-option .option-icon {
+  color: #27AE60;
+}
+
+.product-option .option-icon {
+  color: #9B59B6;
+}
+
+.option-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2C3E50;
+  font-weight: 600;
+}
+
+.option-card p {
+  color: #7F8C8D;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.option-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.option-features span {
+  color: #5D6D7E;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.landing-about {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.about-content h3 {
+  font-size: 2rem;
+  color: #2C3E50;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.about-content p {
+  color: #5D6D7E;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Admin Modal Styles */
+.admin-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.admin-modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.admin-modal h3 {
+  color: #2C3E50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.admin-password-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.admin-password-input:focus {
+  outline: none;
+  border-color: #8B4513;
+}
+
+.admin-modal-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.admin-modal-buttons .btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-modal-buttons .btn-primary {
+  background: #8B4513;
+  color: white;
+}
+
+.admin-modal-buttons .btn-primary:hover {
+  background: #A0522D;
+}
+
+.admin-modal-buttons .btn-secondary {
+  background: #E0E0E0;
+  color: #5D6D7E;
+}
+
+.admin-modal-buttons .btn-secondary:hover {
+  background: #D0D0D0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landing-main {
+    padding: 2rem 1rem;
+  }
+  
+  .landing-hero h2 {
+    font-size: 2rem;
+  }
+  
+  .landing-hero p {
+    font-size: 1rem;
+  }
+  
+  .options-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .option-card {
+    padding: 1.5rem;
+  }
+  
+  .landing-about {
+    padding: 2rem;
+  }
+  
+  .about-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 2rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+  }
+  
+  .landing-hero h2 {
+    font-size: 1.8rem;
+  }
+  
+  .option-card {
+    padding: 1rem;
+  }
+  
+  .option-icon {
+    font-size: 2.5rem;
+  }
+  
+  .option-card h3 {
+    font-size: 1.3rem;
+  }
+}
